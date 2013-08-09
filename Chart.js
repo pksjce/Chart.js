@@ -1094,7 +1094,7 @@ window.Chart = function(context){
 					ctx.fillStyle = data.datasets[i].fillColor;
 					ctx.strokeStyle = data.datasets[i].strokeColor;
 				for (var j=0; j<data.datasets[i].data.length; j++){
-					var barOffset = xAxisPosY -20 - (config.barValueSpacing + valueHop*j + barWidth*i + config.barDatasetSpacing*i + config.barStrokeWidth*i);
+					var barOffset = xAxisPosY -barWidth - (config.barValueSpacing + valueHop*j + barWidth*i + config.barDatasetSpacing*i + config.barStrokeWidth*i);
 					
 					ctx.beginPath();
 					ctx.moveTo(yAxisPosX, barOffset);
